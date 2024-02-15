@@ -111,6 +111,7 @@
   import { ref, onMounted, watchEffect, computed } from 'vue';
 
   export default {
+    name: 'App',
     setup() {
       const roomJan = ref(0);
       const roomFeb = ref(0);
