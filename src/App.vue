@@ -38,51 +38,51 @@
         <tbody>
           <tr>
             <td scope="row">Number of rooms</td>
-            <td><input type="number" v-model="roomJan" @keyup.enter="calculateRooms" @blur="handleInputBlurRooms"></td>
-            <td><input type="number" v-model="roomFeb" @keyup.enter="calculateRooms" @blur="handleInputBlurRooms"></td>
-            <td><input type="number" v-model="roomMar" @keyup.enter="calculateRooms" @blur="handleInputBlurRooms"></td>
-            <td><input type="number" v-model="roomApr" @keyup.enter="calculateRooms" @blur="handleInputBlurRooms"></td>
-            <td><input type="number" v-model="roomMay" @keyup.enter="calculateRooms" @blur="handleInputBlurRooms"></td>
-            <td><input type="number" v-model="roomJun" @keyup.enter="calculateRooms" @blur="handleInputBlurRooms"></td>
-            <td><input type="number" v-model="roomJul" @keyup.enter="calculateRooms" @blur="handleInputBlurRooms"></td>
-            <td><input type="number" v-model="roomAug" @keyup.enter="calculateRooms" @blur="handleInputBlurRooms"></td>
-            <td><input type="number" v-model="roomSep" @keyup.enter="calculateRooms" @blur="handleInputBlurRooms"></td>
-            <td><input type="number" v-model="roomOct" @keyup.enter="calculateRooms" @blur="handleInputBlurRooms"></td>
-            <td><input type="number" v-model="roomNov" @keyup.enter="calculateRooms" @blur="handleInputBlurRooms"></td>
-            <td><input type="number" v-model="roomDec" @keyup.enter="calculateRooms" @blur="handleInputBlurRooms"></td>
+            <td><input type="number" v-model="roomJan" @keyup.enter="calculateRooms" min="0" @blur="handleInputBlurRooms"></td>
+            <td><input type="number" v-model="roomFeb" @keyup.enter="calculateRooms" min="0" @blur="handleInputBlurRooms"></td>
+            <td><input type="number" v-model="roomMar" @keyup.enter="calculateRooms" min="0" @blur="handleInputBlurRooms"></td>
+            <td><input type="number" v-model="roomApr" @keyup.enter="calculateRooms" min="0" @blur="handleInputBlurRooms"></td>
+            <td><input type="number" v-model="roomMay" @keyup.enter="calculateRooms" min="0" @blur="handleInputBlurRooms"></td>
+            <td><input type="number" v-model="roomJun" @keyup.enter="calculateRooms" min="0" @blur="handleInputBlurRooms"></td>
+            <td><input type="number" v-model="roomJul" @keyup.enter="calculateRooms" min="0" @blur="handleInputBlurRooms"></td>
+            <td><input type="number" v-model="roomAug" @keyup.enter="calculateRooms" min="0" @blur="handleInputBlurRooms"></td>
+            <td><input type="number" v-model="roomSep" @keyup.enter="calculateRooms" min="0" @blur="handleInputBlurRooms"></td>
+            <td><input type="number" v-model="roomOct" @keyup.enter="calculateRooms" min="0" @blur="handleInputBlurRooms"></td>
+            <td><input type="number" v-model="roomNov" @keyup.enter="calculateRooms" min="0" @blur="handleInputBlurRooms"></td>
+            <td><input type="number" v-model="roomDec" @keyup.enter="calculateRooms" min="0" @blur="handleInputBlurRooms"></td>
             <td><b>{{ Math.round(roomsAvg) }}</b></td>
           </tr>
           <tr>
             <td scope="row">Occupancy</td>
-            <td><input type="number" v-model="occupancyJan" @input="formatInputOccupancy" @keyup.enter="calculateOccupancy" step="0.01" min="0" @blur="handleInputBlurOccupancy">%</td>
-            <td><input type="number" v-model="occupancyFeb" @input="formatInputOccupancy" @keyup.enter="calculateOccupancy" step="0.01" min="0" @blur="handleInputBlurOccupancy">%</td>
-            <td><input type="number" v-model="occupancyMar" @input="formatInputOccupancy" @keyup.enter="calculateOccupancy" step="0.01" min="0" @blur="handleInputBlurOccupancy">%</td>
-            <td><input type="number" v-model="occupancyApr" @input="formatInputOccupancy" @keyup.enter="calculateOccupancy" step="0.01" min="0" @blur="handleInputBlurOccupancy">%</td>
-            <td><input type="number" v-model="occupancyMay" @input="formatInputOccupancy" @keyup.enter="calculateOccupancy" step="0.01" min="0" @blur="handleInputBlurOccupancy">%</td>
-            <td><input type="number" v-model="occupancyJun" @input="formatInputOccupancy" @keyup.enter="calculateOccupancy" step="0.01" min="0" @blur="handleInputBlurOccupancy">%</td>
-            <td><input type="number" v-model="occupancyJul" @input="formatInputOccupancy" @keyup.enter="calculateOccupancy" step="0.01" min="0" @blur="handleInputBlurOccupancy">%</td>
-            <td><input type="number" v-model="occupancyAug" @input="formatInputOccupancy" @keyup.enter="calculateOccupancy" step="0.01" min="0" @blur="handleInputBlurOccupancy">%</td>
-            <td><input type="number" v-model="occupancySep" @input="formatInputOccupancy" @keyup.enter="calculateOccupancy" step="0.01" min="0" @blur="handleInputBlurOccupancy">%</td>
-            <td><input type="number" v-model="occupancyOct" @input="formatInputOccupancy" @keyup.enter="calculateOccupancy" step="0.01" min="0" @blur="handleInputBlurOccupancy">%</td>
-            <td><input type="number" v-model="occupancyNov" @input="formatInputOccupancy" @keyup.enter="calculateOccupancy" step="0.01" min="0" @blur="handleInputBlurOccupancy">%</td>
-            <td><input type="number" v-model="occupancyDec" @input="formatInputOccupancy" @keyup.enter="calculateOccupancy" step="0.01" min="0" @blur="handleInputBlurOccupancy">%</td>
+            <td><input type="number" v-model="occupancyJan" @keyup.enter="calculateOccupancy" step="0.01" min="0" @blur="handleInputBlurOccupancy">%</td>
+            <td><input type="number" v-model="occupancyFeb" @keyup.enter="calculateOccupancy" step="0.01" min="0" @blur="handleInputBlurOccupancy">%</td>
+            <td><input type="number" v-model="occupancyMar" @keyup.enter="calculateOccupancy" step="0.01" min="0" @blur="handleInputBlurOccupancy">%</td>
+            <td><input type="number" v-model="occupancyApr" @keyup.enter="calculateOccupancy" step="0.01" min="0" @blur="handleInputBlurOccupancy">%</td>
+            <td><input type="number" v-model="occupancyMay" @keyup.enter="calculateOccupancy" step="0.01" min="0" @blur="handleInputBlurOccupancy">%</td>
+            <td><input type="number" v-model="occupancyJun" @keyup.enter="calculateOccupancy" step="0.01" min="0" @blur="handleInputBlurOccupancy">%</td>
+            <td><input type="number" v-model="occupancyJul" @keyup.enter="calculateOccupancy" step="0.01" min="0" @blur="handleInputBlurOccupancy">%</td>
+            <td><input type="number" v-model="occupancyAug" @keyup.enter="calculateOccupancy" step="0.01" min="0" @blur="handleInputBlurOccupancy">%</td>
+            <td><input type="number" v-model="occupancySep" @keyup.enter="calculateOccupancy" step="0.01" min="0" @blur="handleInputBlurOccupancy">%</td>
+            <td><input type="number" v-model="occupancyOct" @keyup.enter="calculateOccupancy" step="0.01" min="0" @blur="handleInputBlurOccupancy">%</td>
+            <td><input type="number" v-model="occupancyNov" @keyup.enter="calculateOccupancy" step="0.01" min="0" @blur="handleInputBlurOccupancy">%</td>
+            <td><input type="number" v-model="occupancyDec" @keyup.enter="calculateOccupancy" step="0.01" min="0" @blur="handleInputBlurOccupancy">%</td>
             <td><b>{{ occupancyAvg.toFixed(2) }} %</b></td>
           </tr>
           <tr>
             <td scope="row">ADR</td>
-            <td>$<input type="number" v-model="adrJan" @input="formatInputAdr" @keyup.enter="calculateAdr" step="0.01" min="0" @blur="handleInputBlurAdr"></td>
-            <td>$<input type="number" v-model="adrFeb" @input="formatInputAdr" @keyup.enter="calculateAdr" step="0.01" min="0" @blur="handleInputBlurAdr"></td>
-            <td>$<input type="number" v-model="adrMar" @input="formatInputAdr" @keyup.enter="calculateAdr" step="0.01" min="0" @blur="handleInputBlurAdr"></td>
-            <td>$<input type="number" v-model="adrApr" @input="formatInputAdr" @keyup.enter="calculateAdr" step="0.01" min="0" @blur="handleInputBlurAdr"></td>
-            <td>$<input type="number" v-model="adrMay" @input="formatInputAdr" @keyup.enter="calculateAdr" step="0.01" min="0" @blur="handleInputBlurAdr"></td>
-            <td>$<input type="number" v-model="adrJun" @input="formatInputAdr" @keyup.enter="calculateAdr" step="0.01" min="0" @blur="handleInputBlurAdr"></td>
-            <td>$<input type="number" v-model="adrJul" @input="formatInputAdr" @keyup.enter="calculateAdr" step="0.01" min="0" @blur="handleInputBlurAdr"></td>
-            <td>$<input type="number" v-model="adrAug" @input="formatInputAdr" @keyup.enter="calculateAdr" step="0.01" min="0" @blur="handleInputBlurAdr"></td>
-            <td>$<input type="number" v-model="adrSep" @input="formatInputAdr" @keyup.enter="calculateAdr" step="0.01" min="0" @blur="handleInputBlurAdr"></td>
-            <td>$<input type="number" v-model="adrOct" @input="formatInputAdr" @keyup.enter="calculateAdr" step="0.01" min="0" @blur="handleInputBlurAdr"></td>
-            <td>$<input type="number" v-model="adrNov" @input="formatInputAdr" @keyup.enter="calculateAdr" step="0.01" min="0" @blur="handleInputBlurAdr"></td>
-            <td>$<input type="number" v-model="adrDec" @input="formatInputAdr" @keyup.enter="calculateAdr" step="0.01" min="0" @blur="handleInputBlurAdr"></td>
-            <td><b>${{ adrAvg.toFixed(2) }}</b></td>
+            <td>$<input type="text" v-model="adrJan" @keyup.enter="calculateAdr" @blur="handleInputBlurAdr" @keydown="handleKeyDown"></td>
+            <td>$<input type="number" v-model="adrFeb" @keyup.enter="calculateAdr" @blur="handleInputBlurAdr" @keydown="handleKeyDown"></td>
+            <td>$<input type="number" v-model="adrMar" @keyup.enter="calculateAdr" @blur="handleInputBlurAdr" @keydown="handleKeyDown"></td>
+            <td>$<input type="number" v-model="adrApr" @keyup.enter="calculateAdr" @blur="handleInputBlurAdr" @keydown="handleKeyDown"></td>
+            <td>$<input type="number" v-model="adrMay" @keyup.enter="calculateAdr" @blur="handleInputBlurAdr" @keydown="handleKeyDown"></td>
+            <td>$<input type="number" v-model="adrJun" @keyup.enter="calculateAdr" @blur="handleInputBlurAdr" @keydown="handleKeyDown"></td>
+            <td>$<input type="number" v-model="adrJul" @keyup.enter="calculateAdr" @blur="handleInputBlurAdr" @keydown="handleKeyDown"></td>
+            <td>$<input type="number" v-model="adrAug" @keyup.enter="calculateAdr" @blur="handleInputBlurAdr" @keydown="handleKeyDown"></td>
+            <td>$<input type="number" v-model="adrSep" @keyup.enter="calculateAdr" @blur="handleInputBlurAdr" @keydown="handleKeyDown"></td>
+            <td>$<input type="number" v-model="adrOct" @keyup.enter="calculateAdr" @blur="handleInputBlurAdr" @keydown="handleKeyDown"></td>
+            <td>$<input type="number" v-model="adrNov" @keyup.enter="calculateAdr" @blur="handleInputBlurAdr" @keydown="handleKeyDown"></td>
+            <td>$<input type="number" v-model="adrDec" @keyup.enter="calculateAdr" @blur="handleInputBlurAdr" @keydown="handleKeyDown"></td>
+            <td><b>${{ adrAvgFormatted }}</b></td>
           </tr>
           <tr>
             <th scope="row">Total</th>
@@ -113,25 +113,42 @@
   export default {
     name: 'App',
     setup() {
-      const roomJan = ref(0);
-      const roomFeb = ref(0);
-      const roomMar = ref(0);
-      const roomApr = ref(0);
-      const roomMay = ref(0);
-      const roomJun = ref(0);
-      const roomJul = ref(0);
-      const roomAug = ref(0);
-      const roomSep = ref(0);
-      const roomOct = ref(0);
-      const roomNov = ref(0);
-      const roomDec = ref(0);
+      const roomJan = ref('0');
+      const roomFeb = ref('0');
+      const roomMar = ref('0');
+      const roomApr = ref('0');
+      const roomMay = ref('0');
+      const roomJun = ref('0');
+      const roomJul = ref('0');
+      const roomAug = ref('0');
+      const roomSep = ref('0');
+      const roomOct = ref('0');
+      const roomNov = ref('0');
+      const roomDec = ref('0');
+
+      const ValidateInputRoom = () => {
+        if(roomJan.value === null || roomJan.value === '' || isNaN(roomJan.value) || parseInt(roomJan.value, 10) < 0){ roomJan.value = '0'; }
+        if(roomFeb.value === null || roomFeb.value === '' || isNaN(roomFeb.value) || parseInt(roomFeb.value, 10) < 0){ roomFeb.value = '0'; }
+        if(roomMar.value === null || roomMar.value === '' || isNaN(roomMar.value) || parseInt(roomMar.value, 10) < 0){ roomMar.value = '0'; }
+        if(roomApr.value === null || roomApr.value === '' || isNaN(roomApr.value) || parseInt(roomApr.value, 10) < 0){ roomApr.value = '0'; }
+        if(roomMay.value === null || roomMay.value === '' || isNaN(roomMay.value) || parseInt(roomMay.value, 10) < 0){ roomMay.value = '0'; }
+        if(roomJun.value === null || roomJun.value === '' || isNaN(roomJun.value) || parseInt(roomJun.value, 10) < 0){ roomJun.value = '0'; }
+        if(roomJul.value === null || roomJul.value === '' || isNaN(roomJul.value) || parseInt(roomJul.value, 10) < 0){ roomJul.value = '0'; }
+        if(roomAug.value === null || roomAug.value === '' || isNaN(roomAug.value) || parseInt(roomAug.value, 10) < 0){ roomAug.value = '0'; }
+        if(roomSep.value === null || roomSep.value === '' || isNaN(roomSep.value) || parseInt(roomSep.value, 10) < 0){ roomSep.value = '0'; }
+        if(roomOct.value === null || roomOct.value === '' || isNaN(roomOct.value) || parseInt(roomOct.value, 10) < 0){ roomOct.value = '0'; }
+        if(roomNov.value === null || roomNov.value === '' || isNaN(roomNov.value) || parseInt(roomNov.value, 10) < 0){ roomNov.value = '0'; }
+        if(roomDec.value === null || roomDec.value === '' || isNaN(roomDec.value) || parseInt(roomDec.value, 10) < 0){ roomDec.value = '0'; }
+      }
 
       const roomsAvg = ref(0);
       const handleInputBlurRooms = () => {
+        ValidateInputRoom();
         calculateRooms();
         calculateRevenue();
       };
       const calculateRooms = () => {
+        ValidateInputRoom();
         const roomValues = [
           roomJan.value, roomFeb.value, roomMar.value, roomApr.value, roomMay.value,
           roomJun.value, roomJul.value, roomAug.value, roomSep.value, roomOct.value,
@@ -164,26 +181,40 @@
       const occupancyDec = ref('0.00');
 
       const formatInputOccupancy = () => {
-        occupancyJan.value = parseFloat(occupancyJan.value).toFixed(2);
-        occupancyFeb.value = parseFloat(occupancyFeb.value).toFixed(2);
-        occupancyMar.value = parseFloat(occupancyMar.value).toFixed(2);
-        occupancyApr.value = parseFloat(occupancyApr.value).toFixed(2);
-        occupancyMay.value = parseFloat(occupancyMay.value).toFixed(2);
-        occupancyJun.value = parseFloat(occupancyJun.value).toFixed(2);
-        occupancyJul.value = parseFloat(occupancyJul.value).toFixed(2);
-        occupancyAug.value = parseFloat(occupancyAug.value).toFixed(2);
-        occupancySep.value = parseFloat(occupancySep.value).toFixed(2);
-        occupancyOct.value = parseFloat(occupancyOct.value).toFixed(2);
-        occupancyNov.value = parseFloat(occupancyNov.value).toFixed(2);
-        occupancyDec.value = parseFloat(occupancyDec.value).toFixed(2);
+        if (occupancyJan.value === null || occupancyJan.value === '' || isNaN(occupancyFeb.value) || parseFloat(occupancyJan.value) < 0.00 || parseFloat(occupancyJan.value) > 100.00) { occupancyJan.value = '0.00';} 
+        else { occupancyJan.value = parseFloat(occupancyJan.value).toFixed(2); }
+        if(occupancyFeb.value === null || occupancyFeb.value === '' || isNaN(occupancyFeb.value) || parseFloat(occupancyFeb.value) < 0.00 || parseFloat(occupancyFeb.value) > 100.00){ occupancyFeb.value = '0.00'; }
+        else{ occupancyFeb.value = parseFloat(occupancyFeb.value).toFixed(2); }
+        if(occupancyMar.value === null || occupancyMar.value === '' || isNaN(occupancyMar.value) || parseFloat(occupancyMar.value) < 0.00 || parseFloat(occupancyMar.value) > 100.00){ occupancyMar.value = '0.00'; }
+        else{ occupancyMar.value = parseFloat(occupancyMar.value).toFixed(2); }
+        if(occupancyApr.value === null || occupancyApr.value === '' || isNaN(occupancyApr.value) || parseFloat(occupancyApr.value) < 0.00 || parseFloat(occupancyApr.value) > 100.00){ occupancyApr.value = '0.00'; }
+        else{ occupancyApr.value = parseFloat(occupancyApr.value).toFixed(2); }
+        if(occupancyMay.value === null || occupancyMay.value === '' || isNaN(occupancyMay.value) || parseFloat(occupancyMay.value) < 0.00 || parseFloat(occupancyMay.value) > 100.00){ occupancyMay.value = '0.00'; }
+        else{ occupancyMay.value = parseFloat(occupancyMay.value).toFixed(2); }
+        if(occupancyJun.value === null || occupancyJun.value === '' || isNaN(occupancyJun.value) || parseFloat(occupancyJun.value) < 0.00 || parseFloat(occupancyJun.value) > 100.00){ occupancyJun.value = '0.00'; }
+        else{ occupancyJun.value = parseFloat(occupancyJun.value).toFixed(2); }
+        if(occupancyJul.value === null || occupancyJul.value === '' || isNaN(occupancyJul.value) || parseFloat(occupancyJul.value) < 0.00 || parseFloat(occupancyJul.value) > 100.00){ occupancyJul.value = '0.00'; }
+        else{ occupancyJul.value = parseFloat(occupancyJul.value).toFixed(2); }
+        if(occupancyAug.value === null || occupancyAug.value === '' || isNaN(occupancyAug.value) || parseFloat(occupancyAug.value) < 0.00 || parseFloat(occupancyAug.value) > 100.00){ occupancyAug.value = '0.00'; }
+        else{ occupancyAug.value = parseFloat(occupancyAug.value).toFixed(2); }
+        if(occupancySep.value === null || occupancySep.value === '' || isNaN(occupancySep.value) || parseFloat(occupancySep.value) < 0.00 || parseFloat(occupancySep.value) > 100.00){ occupancySep.value = '0.00'; }
+        else{ occupancySep.value = parseFloat(occupancySep.value).toFixed(2); }
+        if(occupancyOct.value === null || occupancyOct.value === '' || isNaN(occupancySep.value) || parseFloat(occupancySep.value) < 0.00 || parseFloat(occupancySep.value) > 100.00){ occupancyOct.value = '0.00'; }
+        else{ occupancyOct.value = parseFloat(occupancyOct.value).toFixed(2); }
+        if(occupancyNov.value === null || occupancyNov.value === '' || isNaN(occupancyNov.value) || parseFloat(occupancyNov.value) < 0.00 || parseFloat(occupancyNov.value) > 100.00){ occupancyNov.value = '0.00'; }
+        else{ occupancyNov.value = parseFloat(occupancyNov.value).toFixed(2); }
+        if(occupancyDec.value === null || occupancyDec.value === '' || isNaN(occupancyDec.value) || parseFloat(occupancyDec.value) < 0.00 || parseFloat(occupancyDec.value) > 100.00){ occupancyDec.value = '0.00'; }
+        else{ occupancyDec.value = parseFloat(occupancyDec.value).toFixed(2); } 
       };
 
       const occupancyAvg = ref(0);
       const handleInputBlurOccupancy = () => {
+        formatInputOccupancy();
         calculateOccupancy();
         calculateRevenue();
       };
       const calculateOccupancy = () => {
+        formatInputOccupancy();
         const occupancyValues = [
           occupancyJan.value, occupancyFeb.value, occupancyMar.value, occupancyApr.value, occupancyMay.value,
           occupancyJun.value, occupancyJul.value, occupancyAug.value, occupancySep.value, occupancyOct.value,
@@ -215,41 +246,73 @@
       const adrNov = ref('0.00');
       const adrDec = ref('0.00');
 
+      const handleKeyDown = (event) => {
+        const allowedKeys = ['Backspace', 'Delete', 'Enter', '.'];
+        if (!allowedKeys.includes(event.key) && (event.key < '0' || event.key > '9')) {
+          event.preventDefault();
+        }
+      };
+
       const formatInputAdr = () => {
-        adrJan.value = parseFloat(adrJan.value).toFixed(2);
-        adrFeb.value = parseFloat(adrFeb.value).toFixed(2);
-        adrMar.value = parseFloat(adrMar.value).toFixed(2);
-        adrApr.value = parseFloat(adrApr.value).toFixed(2);
-        adrMay.value = parseFloat(adrMay.value).toFixed(2);
-        adrJun.value = parseFloat(adrJun.value).toFixed(2);
-        adrJul.value = parseFloat(adrJul.value).toFixed(2);
-        adrAug.value = parseFloat(adrAug.value).toFixed(2);
-        adrSep.value = parseFloat(adrSep.value).toFixed(2);
-        adrOct.value = parseFloat(adrOct.value).toFixed(2);
-        adrNov.value = parseFloat(adrNov.value).toFixed(2);
-        adrDec.value = parseFloat(adrDec.value).toFixed(2);
+        adrJan.value = formatDecimalWithCommas(adrJan.value);
+        adrFeb.value = formatDecimalWithCommas(adrFeb.value);
+        adrMar.value = formatDecimalWithCommas(adrMar.value);
+        adrApr.value = formatDecimalWithCommas(adrApr.value);
+        adrMay.value = formatDecimalWithCommas(adrMay.value);
+        adrJun.value = formatDecimalWithCommas(adrJun.value);
+        adrJul.value = formatDecimalWithCommas(adrJul.value);
+        adrAug.value = formatDecimalWithCommas(adrAug.value);
+        adrSep.value = formatDecimalWithCommas(adrSep.value);
+        adrOct.value = formatDecimalWithCommas(adrOct.value);
+        adrNov.value = formatDecimalWithCommas(adrNov.value);
+        adrDec.value = formatDecimalWithCommas(adrDec.value);
+      };
+
+      const adrAvgFormatted = computed(() => {
+        const adrAvgValue = adrAvg.value;
+        const roundedValue = Math.round(adrAvgValue * 100) / 100;
+        return formatDecimalWithCommas(roundedValue);
+      });
+
+      const formatDecimalWithCommas = (value) => {
+        let formattedValue = value.toString().replace(/,/g, '');
+        const parts = formattedValue.split('.');
+        let integerPart = parts[0];
+        let decimalPart = parts[1] || '';
+        let formattedIntegerPart = '';
+        let count = 0;
+        for (let i = integerPart.length - 1; i >= 0; i--) {
+          formattedIntegerPart = integerPart[i] + formattedIntegerPart;
+          count++;
+          if (count % 3 === 0 && i !== 0) { formattedIntegerPart = ',' + formattedIntegerPart; }
+        }
+        formattedValue = formattedIntegerPart + (decimalPart ? '.' + decimalPart : '');
+        if (decimalPart === '') { formattedValue += '.00'; }
+        return formattedValue;
       };
 
       const adrAvg = ref(0);
       const handleInputBlurAdr = () => {
         calculateAdr();
         calculateRevenue();
+        formatInputAdr();
       };
       const calculateAdr = () => {
+        formatInputAdr();
         const adrValues = [
           adrJan.value, adrFeb.value, adrMar.value, adrApr.value, adrMay.value,
           adrJun.value, adrJul.value, adrAug.value, adrSep.value, adrOct.value,
           adrNov.value, adrDec.value
         ];
         const hasInvalidInput = adrValues.some(value => {
-          const parsedValue = parseFloat(value);
+          const parsedValue = parseFloat(value.replace(/,/g, ''));
           return isNaN(parsedValue) || parsedValue < 0;
         });
         if (hasInvalidInput) {
           //alert('Invalid input. Please enter positive numbers.');
           return;
         }
-        const adrSum = adrValues.reduce((sum, value) => sum + parseFloat(value), 0);
+        const adrSum = adrValues.reduce((sum, value) => sum + parseFloat(value.replace(/,/g, '')), 0);
         adrAvg.value = adrSum / 12;
         calculateRevenue();
       };
@@ -333,6 +396,7 @@
         roomOct,
         roomNov,
         roomDec,
+        ValidateInputRoom,
         calculateRooms,
         roomsAvg,
         occupancyJan,
@@ -362,12 +426,15 @@
         adrOct,
         adrNov,
         adrDec,
+        handleKeyDown,
         formatInputAdr,
         calculateAdr,
         adrAvg,
+        adrAvgFormatted,
         handleInputBlurRooms,
         handleInputBlurOccupancy,
         handleInputBlurAdr,
+        formatDecimalWithCommas,
         calculateRevenue,
         revJan,
         revFeb,
@@ -404,6 +471,9 @@
   input{
     width: 100px;
     border: none;
+  }
+  input:hover{
+    cursor: pointer;
   }
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
