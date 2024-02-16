@@ -331,18 +331,22 @@
       const revDec = ref('0.00');
 
       const calculateRevenue = () => {
-        revJan.value = parseFloat(roomJan.value) * parseFloat(occupancyJan.value) * parseFloat(adrJan.value) * 31;
-        revFeb.value = parseFloat(roomFeb.value) * parseFloat(occupancyFeb.value) * parseFloat(adrFeb.value) * 28;
-        revMar.value = parseFloat(roomMar.value) * parseFloat(occupancyMar.value) * parseFloat(adrMar.value) * 31;
-        revApr.value = parseFloat(roomApr.value) * parseFloat(occupancyApr.value) * parseFloat(adrApr.value) * 30;
-        revMay.value = parseFloat(roomMay.value) * parseFloat(occupancyMay.value) * parseFloat(adrMay.value) * 31;
-        revJun.value = parseFloat(roomJun.value) * parseFloat(occupancyJun.value) * parseFloat(adrJun.value) * 30;
-        revJul.value = parseFloat(roomJul.value) * parseFloat(occupancyJul.value) * parseFloat(adrJul.value) * 31;
-        revAug.value = parseFloat(roomAug.value) * parseFloat(occupancyAug.value) * parseFloat(adrAug.value) * 31;
-        revSep.value = parseFloat(roomSep.value) * parseFloat(occupancySep.value) * parseFloat(adrSep.value) * 30;
-        revOct.value = parseFloat(roomOct.value) * parseFloat(occupancyOct.value) * parseFloat(adrOct.value) * 31;
-        revNov.value = parseFloat(roomNov.value) * parseFloat(occupancyNov.value) * parseFloat(adrNov.value) * 30;
-        revDec.value = parseFloat(roomDec.value) * parseFloat(occupancyDec.value) * parseFloat(adrDec.value) * 31;
+        revJan.value = parseFloat(roomJan.value) * parseFloat(occupancyJan.value) * parseFloat(removeCommas(adrJan.value)) * 31;
+        revFeb.value = parseFloat(roomFeb.value) * parseFloat(occupancyFeb.value) * parseFloat(removeCommas(adrFeb.value)) * 28;
+        revMar.value = parseFloat(roomMar.value) * parseFloat(occupancyMar.value) * parseFloat(removeCommas(adrMar.value)) * 31;
+        revApr.value = parseFloat(roomApr.value) * parseFloat(occupancyApr.value) * parseFloat(removeCommas(adrApr.value)) * 30;
+        revMay.value = parseFloat(roomMay.value) * parseFloat(occupancyMay.value) * parseFloat(removeCommas(adrMay.value)) * 31;
+        revJun.value = parseFloat(roomJun.value) * parseFloat(occupancyJun.value) * parseFloat(removeCommas(adrJun.value)) * 30;
+        revJul.value = parseFloat(roomJul.value) * parseFloat(occupancyJul.value) * parseFloat(removeCommas(adrJul.value)) * 31;
+        revAug.value = parseFloat(roomAug.value) * parseFloat(occupancyAug.value) * parseFloat(removeCommas(adrAug.value)) * 31;
+        revSep.value = parseFloat(roomSep.value) * parseFloat(occupancySep.value) * parseFloat(removeCommas(adrSep.value)) * 30;
+        revOct.value = parseFloat(roomOct.value) * parseFloat(occupancyOct.value) * parseFloat(removeCommas(adrOct.value)) * 31;
+        revNov.value = parseFloat(roomNov.value) * parseFloat(occupancyNov.value) * parseFloat(removeCommas(adrNov.value)) * 30;
+        revDec.value = parseFloat(roomDec.value) * parseFloat(occupancyDec.value) * parseFloat(removeCommas(adrDec.value)) * 31;
+      };
+
+      const removeCommas = (value) => {
+        return value.toString().replace(/,/g, '');
       };
 
       const formatRevenue = (value) => {
