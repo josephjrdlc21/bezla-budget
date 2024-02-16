@@ -71,17 +71,17 @@
           <tr>
             <td scope="row">ADR</td>
             <td>$<input type="text" v-model="adrJan" @keyup.enter="calculateAdr" @blur="handleInputBlurAdr" @keydown="handleKeyDown"></td>
-            <td>$<input type="number" v-model="adrFeb" @keyup.enter="calculateAdr" @blur="handleInputBlurAdr" @keydown="handleKeyDown"></td>
-            <td>$<input type="number" v-model="adrMar" @keyup.enter="calculateAdr" @blur="handleInputBlurAdr" @keydown="handleKeyDown"></td>
-            <td>$<input type="number" v-model="adrApr" @keyup.enter="calculateAdr" @blur="handleInputBlurAdr" @keydown="handleKeyDown"></td>
-            <td>$<input type="number" v-model="adrMay" @keyup.enter="calculateAdr" @blur="handleInputBlurAdr" @keydown="handleKeyDown"></td>
-            <td>$<input type="number" v-model="adrJun" @keyup.enter="calculateAdr" @blur="handleInputBlurAdr" @keydown="handleKeyDown"></td>
-            <td>$<input type="number" v-model="adrJul" @keyup.enter="calculateAdr" @blur="handleInputBlurAdr" @keydown="handleKeyDown"></td>
-            <td>$<input type="number" v-model="adrAug" @keyup.enter="calculateAdr" @blur="handleInputBlurAdr" @keydown="handleKeyDown"></td>
-            <td>$<input type="number" v-model="adrSep" @keyup.enter="calculateAdr" @blur="handleInputBlurAdr" @keydown="handleKeyDown"></td>
-            <td>$<input type="number" v-model="adrOct" @keyup.enter="calculateAdr" @blur="handleInputBlurAdr" @keydown="handleKeyDown"></td>
-            <td>$<input type="number" v-model="adrNov" @keyup.enter="calculateAdr" @blur="handleInputBlurAdr" @keydown="handleKeyDown"></td>
-            <td>$<input type="number" v-model="adrDec" @keyup.enter="calculateAdr" @blur="handleInputBlurAdr" @keydown="handleKeyDown"></td>
+            <td>$<input type="text" v-model="adrFeb" @keyup.enter="calculateAdr" @blur="handleInputBlurAdr" @keydown="handleKeyDown"></td>
+            <td>$<input type="text" v-model="adrMar" @keyup.enter="calculateAdr" @blur="handleInputBlurAdr" @keydown="handleKeyDown"></td>
+            <td>$<input type="text" v-model="adrApr" @keyup.enter="calculateAdr" @blur="handleInputBlurAdr" @keydown="handleKeyDown"></td>
+            <td>$<input type="text" v-model="adrMay" @keyup.enter="calculateAdr" @blur="handleInputBlurAdr" @keydown="handleKeyDown"></td>
+            <td>$<input type="text" v-model="adrJun" @keyup.enter="calculateAdr" @blur="handleInputBlurAdr" @keydown="handleKeyDown"></td>
+            <td>$<input type="text" v-model="adrJul" @keyup.enter="calculateAdr" @blur="handleInputBlurAdr" @keydown="handleKeyDown"></td>
+            <td>$<input type="text" v-model="adrAug" @keyup.enter="calculateAdr" @blur="handleInputBlurAdr" @keydown="handleKeyDown"></td>
+            <td>$<input type="text" v-model="adrSep" @keyup.enter="calculateAdr" @blur="handleInputBlurAdr" @keydown="handleKeyDown"></td>
+            <td>$<input type="text" v-model="adrOct" @keyup.enter="calculateAdr" @blur="handleInputBlurAdr" @keydown="handleKeyDown"></td>
+            <td>$<input type="text" v-model="adrNov" @keyup.enter="calculateAdr" @blur="handleInputBlurAdr" @keydown="handleKeyDown"></td>
+            <td>$<input type="text" v-model="adrDec" @keyup.enter="calculateAdr" @blur="handleInputBlurAdr" @keydown="handleKeyDown"></td>
             <td><b>${{ adrAvgFormatted }}</b></td>
           </tr>
           <tr>
